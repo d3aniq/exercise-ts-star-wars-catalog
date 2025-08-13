@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+.hero { padding: 48px 16px; text-align: center; background: #000; color: #ffe81f; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; }
+#list, #details > div { background: #111; color: #fff; padding: 12px; border-radius: 12px; }
+#details { display: grid; grid-template-rows: 1fr 1fr; gap: 16px; }
+.loader { display:inline-block; border:4px solid #333; border-top:4px solid #fff; border-radius:50%; width:24px;height:24px; animation:spin 1s linear infinite;}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
